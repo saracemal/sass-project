@@ -1,0 +1,24 @@
+header {
+    position: absolute;
+    width: 1120px;
+    height: 60px;
+    left: 240px;
+    top: 47px;
+    .nav {
+        &__list {
+            @include navLinks
+        }
+
+        &__item {
+
+        }
+    }
+
+    .demoBtn {
+        
+    }
+}
+
+button {
+    @include demoBtn(47);
+}

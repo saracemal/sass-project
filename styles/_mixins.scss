@@ -1,0 +1,42 @@
+@import './variables';
+
+/* BUTTON MIXINS */
+
+@mixin demoBtn ($top) {
+    position: absolute;
+    width: 210px;
+    height: 60px;
+    left: 1150px;
+    top: $top;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+}
+
+@mixin learnBtn ($background) {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    left: 240px;
+    top: 641px;
+    background: $background;
+    border-radius: 50px;
+}
+
+/* TEXT MIXINS */
+
+@mixin navLinks ($width, $left, $font-weight, $color) {
+    position: absolute;
+    width: $width;
+    height: 30px;
+    left: $left;
+    top: 62px;
+
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 160%;
+    
+    color: $color;
+}
