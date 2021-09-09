@@ -1,0 +1,29 @@
+@import './mixins';
+
+.bottom{
+    position: absolute;
+    width: 1600px;
+    height: 613px;
+    left: 0px;
+    top: 3648px;
+}
+
+
+.footerbtns {
+    position: absolute;
+    width: 410px;
+    height: 60px;
+    left: 947px;
+    top: 3771px;
+
+        &__learn {
+            @include learnBtn ($iconPink, 947px, 3771px) {
+            };
+        };
+
+        &__demo {
+            @include demoBtn (1147px, 3771px) {
+            };
+        };
+
+}

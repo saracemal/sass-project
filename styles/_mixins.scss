@@ -2,33 +2,33 @@
 
 /* BUTTON MIXINS */
 
-@mixin demoBtn ($top) {
+@mixin demoBtn ($left, $top) {
     position: absolute;
     width: 210px;
     height: 60px;
-    left: 1150px;
+    left: $left;
     top: $top;
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
 }
 
-@mixin learnBtn ($background) {
+@mixin learnBtn ($background, $left, $top) {
     position: absolute;
     width: 170px;
     height: 60px;
-    left: 240px;
-    top: 641px;
+    left: $left;
+    top: $top;
     background: $background;
     border-radius: 50px;
 }
 
 /* TEXT MIXINS */
 
-@mixin navLinks ($width, $left, $font-weight, $color) {
+@mixin navLinks ($width, $height, $left, $font-weight, $color) {
     position: absolute;
     width: $width;
-    height: 30px;
+    height: $height;
     left: $left;
     top: 62px;
 
@@ -40,3 +40,25 @@
     
     color: $color;
 }
+
+/* LOGO MIXINS */
+
+@mixin logoPurpleRectangle ($top) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 240px;
+    top: $top;
+    background: $iconPurple;
+    border-radius: 20px;
+};
+
+@mixin logoPinkRectangle ($top){
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    left: 269px;
+    top: $top;
+    background: $iconPink;
+    border-radius: 20px;
+};

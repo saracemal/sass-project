@@ -1,3 +1,5 @@
+@import './variables';
+
 header {
     position: absolute;
     width: 1120px;
@@ -6,19 +8,18 @@ header {
     top: 47px;
     .nav {
         &__list {
-            @include navLinks
+          /* space evenly?? */
         }
 
         &__item {
 
+            &--about {
+                @include navLinks(53px, 30px, 410px, 800, $aboutNavFontColor)
+            }
         }
     }
 
     .demoBtn {
-        
+        @include demoBtn(47px)
     }
-}
-
-button {
-    @include demoBtn(47);
 }
