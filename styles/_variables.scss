@@ -1,4 +1,4 @@
-/* GLOBAL VARIABLES */
+/* ------- GLOBAL VARIABLES --------- */
 
 /* DOCUMENT BACKGROUND COLOR */
 $body-bg: #E5E5E5;
@@ -10,7 +10,13 @@ $iconPurple: #9C69E2;
 $iconPink: #F063B8;
 
 /* PRIMARY PAGE FONT */
-$primaryFont: Avenir; 
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  }
+
+$primaryFont: 'Avenir', Helvetica, sans-serif; 
 
 /* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
 $navHeadColor: #485D68;
@@ -19,10 +25,12 @@ $navHeadColor: #485D68;
 $aboutHeadColor: #212353; 
 
 /* HEADER FONT */
-$headerFont: Helvetica;
+$headerFont: Helvetica, Sans-Serif;
 
 /*BORDER RADIUS FOR BUTTONS */
 $btnBorderRadius: 50px;
 
 /* CONTAINER BORDER RADIUS */
 $rectBorderRadius: 50px;
+
+

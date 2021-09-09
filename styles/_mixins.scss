@@ -1,7 +1,53 @@
 @import './variables';
 
+
+/* VECTOR MIXIN TO CREATE ARROWS */
+@mixin vector74($width, $left, $top, $color) {
+    position: absolute;
+    width: $width;
+    height: 0px;
+    left: $left;
+    top: $top;
+    
+    border: 2px solid $color;
+    box-sizing: border-box;
+}
+
+@mixin polygon1($left, $top, $color, $deg) {
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    left: $left;
+    top: $top;
+
+    border: 2px solid $color;
+    box-sizing: border-box;
+    transform: rotate($deg);
+}
+
 /* BUTTON MIXINS */
-@mixin demoBtn ($left, $top) {
+
+@mixin demoBtnText($left, $top, $font-weight) {
+    position: absolute;
+    width: 112px;
+    height: 26px;
+    left: $left;
+    top: $top;
+
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 160%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    color: $aboutHeadColor;
+}
+
+@mixin demoBtn($left, $top) {
     position: absolute;
     width: 210px;
     height: 60px;
@@ -12,7 +58,7 @@
     border-radius: $btnBorderRadius;
 }
 
-@mixin learnBtn ($background, $left, $top) {
+@mixin learnBtn($background, $left, $top) {
     position: absolute;
     width: 170px;
     height: 60px;
@@ -22,7 +68,7 @@
     border-radius: $btnBorderRadius;
 }
 
-@mixin learnBtnText ($left, $top, $font-weight) {
+@mixin learnBtnText($left, $top, $font-weight) {
     position: absolute;
     width: 96px;
     height: 29px;
@@ -43,7 +89,7 @@
 }
 
 /* TEXT MIXINS */
-@mixin navLinks ($width, $height, $left, $font-weight, $color) {
+@mixin navLinks($width, $height, $left, $font-weight, $color) {
     position: absolute;
     width: $width;
     height: $height;
@@ -58,7 +104,15 @@
 }
 
 /* LOGO MIXINS */
-@mixin logoPurpleRectangle ($top) {
+@mixin logoDiv($top) {
+    position: absolute;
+    width: 49px;
+    height: 35px;
+    left: 240px;
+    top: $top;
+};
+
+@mixin logoPurpleRectangle($top) {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -68,7 +122,7 @@
     border-radius: 20px;
 };
 
-@mixin logoPinkRectangle ($top){
+@mixin logoPinkRectangle($top){
     position: absolute;
     width: 20px;
     height: 35px;
@@ -79,7 +133,7 @@
 };
 
 /* TESTIMONIAL MIXINS */
- @mixin testEllipsis ($left) {
+ @mixin testEllipsis($left) {
     position: absolute;
     width: 5px;
     height: 5px;

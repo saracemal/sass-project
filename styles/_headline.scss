@@ -37,8 +37,8 @@
     };
 
     &__button {
-        @include learnBtn (240px, 641px, $iconPurple)
-        @include learnBtnText (277px, 657px, 800)
+        @include learnBtn(240px, 641px, $iconPurple);
+        @include learnBtnText(277px, 657px, 800);
     };
 
     &__img {
