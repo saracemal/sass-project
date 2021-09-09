@@ -9,7 +9,7 @@
     top: $top;
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-    border-radius: 50px;
+    border-radius: $btnBorderRadius;
 }
 
 @mixin learnBtn ($background, $left, $top) {
@@ -19,7 +19,27 @@
     left: $left;
     top: $top;
     background: $background;
-    border-radius: 50px;
+    border-radius: $btnBorderRadius;
+}
+
+@mixin learnBtnText ($left, $top, $font-weight) {
+    position: absolute;
+    width: 96px;
+    height: 29px;
+    left: $left;
+    top: $top;
+
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: 18px;
+    line-height: 160%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 /* TEXT MIXINS */
@@ -29,13 +49,11 @@
     height: $height;
     left: $left;
     top: 62px;
-
-    font-family: Avenir;
+    font-family: $primaryFont;
     font-style: normal;
     font-weight: $font-weight;
     font-size: 16px;
     line-height: 160%;
-    
     color: $color;
 }
 

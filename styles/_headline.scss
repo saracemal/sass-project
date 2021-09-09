@@ -1,0 +1,52 @@
+@import './variables';
+@import './mixins';
+
+.headline {
+
+    &__title {
+        position: absolute;
+        width: 645px;
+        height: 184px;
+        left: 240px;
+        top: 237px;
+
+        font-family: $headerFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 110%;
+
+        display: flex;
+        align-items: center;
+
+        color: $aboutHeadColor;
+    };
+
+    &__info {
+        position: absolute;
+        width: 380px;
+        height: 120px;
+        left: 240px;
+        top: 471px;
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        color: $navHeadColor;
+    };
+
+    &__button {
+        @include learnBtn (240px, 641px, $iconPurple)
+        @include learnBtnText (277px, 657px, 800)
+    };
+
+    &__img {
+        position: absolute;
+        width: 885px;
+        height: 468px;
+        left: 603px;
+        top: 333px;
+        background: url(image1.png);
+    };
+};

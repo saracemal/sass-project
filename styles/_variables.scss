@@ -12,10 +12,17 @@ $iconPink: #F063B8;
 /* PRIMARY PAGE FONT */
 $primaryFont: Avenir; 
 
-/* FONT COLOR FOR NAV LINKS*/
-$navFontColor: #485D68;
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+$navHeadColor: #485D68;
 
-$aboutNavFontColor: #212353; 
+
+$aboutHeadColor: #212353; 
 
 /* HEADER FONT */
 $headerFont: Helvetica;
+
+/*BORDER RADIUS FOR BUTTONS */
+$btnBorderRadius: 50px;
+
+/* CONTAINER BORDER RADIUS */
+$rectBorderRadius: 50px;
