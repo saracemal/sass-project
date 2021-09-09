@@ -1,0 +1,13 @@
+@import './variables';
+@import './mixins';
+
+.testimonials {
+    position: absolute;
+    width: 1118px;
+    height: 709px;
+    left: 242px;
+    top: 2789px;
+    background: $iconPurple;
+    border-radius: 50px;
+}
+

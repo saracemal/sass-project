@@ -1,7 +1,6 @@
 @import './variables';
 
 /* BUTTON MIXINS */
-
 @mixin demoBtn ($left, $top) {
     position: absolute;
     width: 210px;
@@ -24,7 +23,6 @@
 }
 
 /* TEXT MIXINS */
-
 @mixin navLinks ($width, $height, $left, $font-weight, $color) {
     position: absolute;
     width: $width;
@@ -42,7 +40,6 @@
 }
 
 /* LOGO MIXINS */
-
 @mixin logoPurpleRectangle ($top) {
     position: absolute;
     width: 20px;
@@ -62,3 +59,22 @@
     background: $iconPink;
     border-radius: 20px;
 };
+
+/* TESTIMONIAL MIXINS */
+ @mixin testEllipsis ($left) {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: $left;
+    top: 3431px;
+    background: #FFFFFF;
+ };
+
+ @mixin pinkTestEllipsis {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 335px;
+    top: 3428px;
+    background: $iconPink;
+ };
