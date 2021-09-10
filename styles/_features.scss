@@ -5,11 +5,125 @@
 //check to see if i can nest the rect div into featImg with parameters
 //ex: nest rectDiv() and then in the scss below, include rectDiv and featImg with parameters
 
-
-
 //rectangle 4
 //vector
 
 //use container 
-// add text-align center for subheader and for p
 //add code for each vector within the file 
+
+features {
+    @include container(1137.28px, 1026px, 220px, 1613px);
+
+    &__subheader {
+        @include subHeadline(405px, 52px, 596.29px, 1613px);
+        text-align: center;
+    }
+
+    &__paragraph {
+        @include pText(584px, 58px, 507.29px, 1715px);
+        text-align: center;
+    }
+
+    &__rect1 {
+        @include container(531.29px, 388px, 239px, 1843px);
+
+        &--img {
+            @include featImg(232px, 211px, 239px, 1946px, image3.png)
+        }
+
+        &--title {
+            @include title(500.29px, 1922px)
+        }
+
+        &--paragraph {
+            @include featP(500.29px, 1992px);
+        }
+
+        &--vector1 {
+            @include shapes(33.7px, 19.91px, 621.4px, 1916.88px, 20.72deg)
+        }
+
+        &--vector2 {
+            @include shapes(203.82px, 118.6px, 674.41px, 2070.99px, -135deg)
+        }
+
+        &--learnbtn {
+            @include learnMore(500.29px, 2172px)
+        }
+    }
+
+    &__rect2 {
+        @include container(544.28px, 394.56px, 813px, 1873px);
+
+        &--img {
+            @include featImg(241px, 185px, 813px, 1944px, image4.png)
+        }
+
+        &--title {
+            @include title(1087.28px, 1922px)
+        }
+
+        &--paragraph {
+            @include featP(1087.28px, 1992px);
+        }
+
+        &--vector {
+            @include shapes(222.22px, 129.3px, 1199.72px, 2019px, 45deg)
+        }
+
+        &--learnbtn {
+            @include learnMore(1087.28px, 2172px)
+        }
+    }
+
+    &__rect3 {
+        @include container(550.28px, 358px, 220px, 2281px);
+
+        &--img {
+            @include featImg(245px, 181px, 220px, 2404px, image5.png)
+        }
+
+        &--title {
+            @include title(500.29px, 2330px)
+        }
+
+        &--paragraph {
+            @include featP(500.29px, 2400px);
+        }
+
+        &--vector {
+            @include shapes(68.05px, 40.21px, 747.33px, 2337.83px, 150deg)
+        }
+
+        &--learnbtn {
+            @include learnMore(500.29px, 2580px)
+        }
+    }
+
+    &__rect4 {
+        @include container(539.28px, 364px, 818px, 2275px);
+        &--img {
+            @include featImg(230px, 201px, 818px, 2367px, image6.png)
+        }
+
+        &--title {
+            @include title(1087.28px, 2330px);
+        }
+
+        &--paragraph {
+            @include featP(1087.28px, 2400px);
+        }
+
+        &--vector1 {
+            @include shapes(323.58px, 188.28px, 931.28px, 2358.75px, -15deg);
+        }
+
+        &--vector2 {
+            @include shapes(61.85px, 36.55px, 1275.21px, 2559px, 20.72deg)
+        }
+
+        &--learnbtn {
+            @include learnMore(1087.28px, 2580px)
+        }
+    }
+}
