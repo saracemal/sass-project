@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 header {
     @include container(1120px, 60px, 240px, 47px);

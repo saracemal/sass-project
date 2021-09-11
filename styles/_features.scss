@@ -27,6 +27,10 @@ features {
     &__rect1 {
         @include container(531.29px, 388px, 239px, 1843px);
 
+        &--rect {
+            @include featRect(328.29px, 1873px, $featureTeal, $rectBorderRadius);
+        }
+
         &--img {
             @include featImg(232px, 211px, 239px, 1946px, image3)
         }
@@ -55,6 +59,10 @@ features {
     &__rect2 {
         @include container(544.28px, 394.56px, 813px, 1873px);
 
+        &--rect {
+            @include featRect(915.28px, 1873px, $iconPurple, $rectBorderRadius);
+        }
+
         &--img {
             @include featImg(241px, 185px, 813px, 1944px, image4)
         }
@@ -79,6 +87,10 @@ features {
     &__rect3 {
         @include container(550.28px, 358px, 220px, 2281px);
 
+        &--rect {
+            @include featRect(328.29px, 2281px, $iconPink, $rectBorderRadius);
+        }
+
         &--img {
             @include featImg(245px, 181px, 220px, 2404px, image5)
         }
@@ -102,6 +114,11 @@ features {
 
     &__rect4 {
         @include container(539.28px, 364px, 818px, 2275px);
+
+        &--rect {
+            @include featRect(915.28px, 2281px, $featureBlue, $logoBorderRadius);
+        }
+
         &--img {
             @include featImg(230px, 201px, 818px, 2367px, image6)
         }
