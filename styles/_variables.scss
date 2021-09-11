@@ -9,6 +9,22 @@ $iconPurple: #9C69E2;
 /* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
 $iconPink: #F063B8;
 
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+$navHeadColor: #485D68;
+
+/* DARKER BLUE */
+$aboutHeadColor: #212353; 
+
+/* TEAL FOR FEATURE RECTANGLE */
+$featureTeal: #68C9BA;
+
+/* BLUE FOR FEATURE RECTANGLE */
+$featureBlue: #2D9CDB;
+
+$white: #FFFFFF;
+
+
+
 /* PRIMARY PAGE FONT */
 
 @font-face {
@@ -17,12 +33,6 @@ $iconPink: #F063B8;
   }
 
 $primaryFont: 'Avenir', Helvetica, sans-serif; 
-
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-$navHeadColor: #485D68;
-
-
-$aboutHeadColor: #212353; 
 
 /* HEADER FONT */
 $headerFont: Helvetica, Sans-Serif;
@@ -35,8 +45,6 @@ $logoBorderRadius: 20px;
 
 /* CONTAINER BORDER RADIUS */
 $rectBorderRadius: 50px;
-
-$white: #FFFFFF;
 
 
 
