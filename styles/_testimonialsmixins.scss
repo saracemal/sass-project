@@ -1,0 +1,56 @@
+@import './variables';
+
+@mixin img($left, $top, $img) {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: $left;
+    top: $top;
+
+background: url($img.jpg), $iconPink;
+}
+
+@mixin title {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+
+    @include center;
+    letter-spacing: 0.005em;
+
+    color: $aboutHeadColor;
+}
+
+@mixin subheader {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+
+    @include center;
+    letter-spacing: 0.01em;
+
+    color: $iconPurple;
+}
+
+@mixin paragraph {
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+
+    color: $navHeadColor;
+}
+
+@mixin testEllipsis($left) {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: $left;
+    top: 3431px;
+    background: $white;
+ };

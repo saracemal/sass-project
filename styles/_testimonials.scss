@@ -1,13 +1,107 @@
 @import './variables';
 @import './mixins';
+@import './testimonialsmixins';
 
 .testimonials {
-    position: absolute;
-    width: 1118px;
-    height: 709px;
-    left: 242px;
-    top: 2789px;
+    @include container(1118px, 709px, 242px, 2789px);
     background: $iconPurple;
-    border-radius: 50px;
+    border-radius: $btnBorderRadius;
+
+    &__title{
+        @include container(405px, 52px, 335px, 2898px);
+        font-family: $headerFont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 130%;
+        @include center;
+        color: $white;
+    }
+
+    &__test1 {
+        @include container(645px, 330px, 335px, 3038px);
+        background: $white;
+        box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+        border-radius: $logoBorderRadius;
+
+        &--title {
+            @include container(170px, 29px, 525px, 3118px);
+            @include title;
+        }
+
+        &--subheader {
+            @include container(101px, 22px, 525px, 3147px);
+            @include subheader;
+        }
+
+        &--paragraph {
+            @include container(385px, 130px, 525px, 3188px);
+            @include paragraph;
+        }
+
+        &--img {
+            @include img(405px, 3098px);
+        }
+    }
+
+    &__test2 {
+        @include container(400px, 330px, 1000px, 3038px);
+        background: linear-gradient(270deg, $iconPurple 9.75%, rgba(255, 255, 255, 0) 100%);
+
+        border: 1px solid $iconPurple;
+        box-sizing: border-box;
+        border-radius: $logoBorderRadius;
+
+        &--img {
+            @include img(1040px, 3093px);
+        }
+
+        &--title {
+            @include container(170px, 29px, 1160px, 3113px);
+            @include title;
+        }
+
+        &--subheader {
+            @include container(82px, 22px, 1160px, 3142px);
+            @include subheader;
+        }
+
+        &--paragraph {
+            @include container(180px, 130px, 1160px, 3183px);
+            @include paragraph;
+        }
+    }
+
+    &__slide {
+        @include container(55px, 10px, 335px, 3428px);
+
+        &--ellip1 {
+            @include container(10px, 10px, 335px, 3428px);
+            background: $iconPink;
+        }
+        &--ellip2 {
+            @include testEllipsis(355px);
+        }
+        &--ellip3 {
+            @include testEllipsis(370px);
+        }
+        &--ellip4 {
+            @include testEllipsis(385px);
+        }
+    }
+
+    &__arrows {
+        &--left{
+            @include vector74(40px, 1244px, 3433px, $white);
+            @include polygon1(1204px, 3440px, $white, -90deg);
+        }
+
+        &--right {
+            @include vector74(20px, 1264px, 3433px, $white);
+            @include polygon1(1284px, 3426px, $white, 90deg);
+
+            opacity: 0.5
+        }
+    }
 }
 
