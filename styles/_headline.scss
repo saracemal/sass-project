@@ -4,11 +4,7 @@
 .headline {
 
     &__title {
-        position: absolute;
-        width: 645px;
-        height: 184px;
-        left: 240px;
-        top: 237px;
+        @include container(645px, 184px, 240px, 237px);
 
         font-family: $headerFont;
         font-style: normal;
@@ -16,24 +12,21 @@
         font-size: 80px;
         line-height: 110%;
 
-        display: flex;
-        align-items: center;
+        @include center;
+        // @extend center; ??
 
         color: $aboutHeadColor;
     };
 
     &__info {
-        position: absolute;
-        width: 380px;
-        height: 120px;
-        left: 240px;
-        top: 471px;
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 160%;
-        color: $navHeadColor;
+        &__logo {
+          @include container(380px, 120px, 240px, 471px);
+            font-family: $primaryFont;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: $navHeadColor;
     };
 
     &__button {
@@ -42,11 +35,7 @@
     };
 
     &__img {
-        position: absolute;
-        width: 885px;
-        height: 468px;
-        left: 603px;
-        top: 333px;
+        @include container(885px, 468px, 603px, 333px);
         background: url(image1.png);
     };
-};
+}}

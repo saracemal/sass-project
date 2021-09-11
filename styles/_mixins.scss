@@ -2,7 +2,10 @@
 
 /* CONTAINER */
 
-@mixin center
+@mixin center {
+    display: flex;
+    align-items: center;
+}
 
 @mixin container($width, $height, $left, $top) {
     position: absolute;
