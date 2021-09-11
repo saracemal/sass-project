@@ -4,6 +4,7 @@
         "Bahagia",
         "bottommixins",
         "btns",
+        "ellip",
         "featuresmixins",
         "footerbtns",
         "iefix",
@@ -11,6 +12,9 @@
         "opentype",
         "PRBW",
         "Signup",
-        "truetype"
+        "Suspendisse",
+        "testimonialsmixins",
+        "truetype",
+        "wordfaang"
     ]
 }

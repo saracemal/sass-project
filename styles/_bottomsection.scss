@@ -50,6 +50,8 @@
 
         &--demo {
             @include demoBtn(1147px, 3771px);
+            @include vector74(20px, 1308px, 3801px, $iconPurple);
+            @include polygon1(1328px, 3794px, $iconPurple, 90deg);
             display: flex;
             align-items: center;
             letter-spacing: 0.005em;

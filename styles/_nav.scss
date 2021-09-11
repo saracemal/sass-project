@@ -1,11 +1,7 @@
 @import './variables';
 
 header {
-    position: absolute;
-    width: 1120px;
-    height: 60px;
-    left: 240px;
-    top: 47px;
+    @include container(1120px, 60px, 240px, 47px);
 
     &__logo {
         @include logoDiv(59px);
