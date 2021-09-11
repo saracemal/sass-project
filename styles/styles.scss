@@ -1,5 +1,20 @@
 @import "./variables";
 @import './mixins';
+@import './bottommixins';
+@import './bottomsection';
+@import './features';
+@import './featuresmixins';
+@import './headline';
+@import './info';
+@import './nav';
+@import './testimonials';
+@import './testimonialsmixins';
+
+
+
+
+//put all style mixins in one folder and call
+//put all branch mixins in one folder and call 
 
 body {
     background: $body-bg;

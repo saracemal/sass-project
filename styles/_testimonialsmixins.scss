@@ -7,7 +7,7 @@
     left: $left;
     top: $top;
 
-background: url($img.jpg), $iconPink;
+background: url($img), $iconPink;
 }
 
 @mixin title {

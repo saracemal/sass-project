@@ -40,7 +40,7 @@
         }
 
         &--img {
-            @include img(405px, 3098px);
+            @include img(405px, 3098px, random);
         }
     }
 
@@ -53,7 +53,7 @@
         border-radius: $logoBorderRadius;
 
         &--img {
-            @include img(1040px, 3093px);
+            @include img(1040px, 3093px, random);
         }
 
         &--title {

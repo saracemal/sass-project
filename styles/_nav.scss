@@ -24,13 +24,13 @@ header {
         &__item {
 
             &--about {
-                @include navLinks(53px, 30px, 410px, 800, $aboutNavFontColor)
+                @include navLinks(53px, 30px, 410px, 800, $aboutHeadColor)
             };
         };
     };
 
     .demoBtn {
-        @include demoBtn(47px);
+        @include demoBtn(1150px, 47px);
         @include demoBtnText(1179px, 64px, 800);
         @include vector74(20px, 1311px, 77px, $iconPurple);
         @include polygon1(1331px, 70px, $iconPurple, 90deg);
