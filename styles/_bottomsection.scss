@@ -50,7 +50,6 @@
 
         &--demo {
             @include demoBtn(1147px, 3771px);
-
             display: flex;
             align-items: center;
             letter-spacing: 0.005em;
@@ -60,12 +59,14 @@
     footer {
         @include container(1085px, 260px, 240px, 4001px);
 
-        &__logo {
-
-        }
-
         .nav {
             @include container(1085px, 257px, 240px, 4004px);
+
+            &__logo {
+                @include logoDiv(4001px);
+                @include logoPurpleRectangle(4016px);
+                @include logoPinkRectangle(4001px);
+            }
 
             &__title {
                 @include container(153px, 30px, 309px, 4004px);
@@ -102,11 +103,10 @@
                 &--title {
                     @include container(51.75px, 30px, 931px, 4011px);
                     @include footerText(900, 16px, 160%);
-
                 }
                 &--options {
-                    @include footerText();
-
+                    @include container(166px, 190px, 931px, 4071px);
+                    @include footerText(normal, 16px, 250%);
                 }
             }
 
@@ -114,8 +114,8 @@
                 @include container(178px, 110px, 1147px, 4011px);
 
                 &--title {
-                    @include footerText();
-
+                    @include container(170px, 30px, 1147px, 4011px);
+                    @include footerText(900, 16px, 160%);
                 }
 
                 &--fb {
