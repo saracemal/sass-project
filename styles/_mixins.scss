@@ -64,7 +64,7 @@
     height: 60px;
     left: $left;
     top: $top;
-    background: #FFFFFF;
+    background: $white;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: $btnBorderRadius;
 }
@@ -96,7 +96,7 @@
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: $white;
 }
 
 /* TEXT MIXINS */
@@ -198,6 +198,9 @@
     height: 35px;
     left: 240px;
     top: $top;
+
+    @include logoPurpleRectangle($top);
+    @include logoPinkRectangle($top);
 };
 
 @mixin logoPurpleRectangle($top) {
@@ -227,7 +230,7 @@
     height: 5px;
     left: $left;
     top: 3431px;
-    background: #FFFFFF;
+    background: $white;
  };
 
  @mixin pinkTestEllipsis {

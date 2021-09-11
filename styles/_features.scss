@@ -28,7 +28,7 @@ features {
         @include container(531.29px, 388px, 239px, 1843px);
 
         &--img {
-            @include featImg(232px, 211px, 239px, 1946px, image3.png)
+            @include featImg(232px, 211px, 239px, 1946px, image3)
         }
 
         &--title {
@@ -56,7 +56,7 @@ features {
         @include container(544.28px, 394.56px, 813px, 1873px);
 
         &--img {
-            @include featImg(241px, 185px, 813px, 1944px, image4.png)
+            @include featImg(241px, 185px, 813px, 1944px, image4)
         }
 
         &--title {
@@ -80,7 +80,7 @@ features {
         @include container(550.28px, 358px, 220px, 2281px);
 
         &--img {
-            @include featImg(245px, 181px, 220px, 2404px, image5.png)
+            @include featImg(245px, 181px, 220px, 2404px, image5)
         }
 
         &--title {
@@ -103,7 +103,7 @@ features {
     &__rect4 {
         @include container(539.28px, 364px, 818px, 2275px);
         &--img {
-            @include featImg(230px, 201px, 818px, 2367px, image6.png)
+            @include featImg(230px, 201px, 818px, 2367px, image6)
         }
 
         &--title {

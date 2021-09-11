@@ -1,29 +1,138 @@
 @import './mixins';
+@import './variables';
+@import './bottommixins';
 
-.bottom{
-    position: absolute;
-    width: 1600px;
-    height: 613px;
-    left: 0px;
-    top: 3648px;
-}
+.bottom {
+    @include container(1600px, 613px, 0px, 3648px);
 
+    &__rect {
+        @include container(1600px, 2px, 0px, 3648px);
+        background: $iconPurple;
+        opacity: 0.2;
+    }
 
-.footerbtns {
-    position: absolute;
-    width: 410px;
-    height: 60px;
-    left: 947px;
-    top: 3771px;
+    &__title {
+        @include container(584px, 101px, 240px, 3750px);
+        
+        &--subhead {
+            @include container(405px, 52px, 240px, 3750px);
+            font-family: $headerFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 130%;
 
-        &__learn {
-            @include learnBtn ($iconPink, 947px, 3771px) {
-            };
-        };
+            display: flex;
+            align-items: center;
 
-        &__demo {
-            @include demoBtn (1147px, 3771px) {
-            };
-        };
+            color: $aboutHeadColor
+        }
 
+        &--paragraph {
+            @include container(584px, 29px, 240px, 3822px);
+            font-family: $primaryFont;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+
+            color: $navHeadColor;
+        }
+    }
+
+    &__btns {
+        @include container(410px, 60px, 947px, 3771px);
+
+        &--learn {
+            @include learnBtn(947px, 3771px, $iconPink);
+            @include learnBtnText(984px, 3787px, 900)
+        }
+
+        &--demo {
+            @include demoBtn(1147px, 3771px);
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.005em;
+        }
+
+    }
+    footer {
+        @include container(1085px, 260px, 240px, 4001px);
+
+        &__logo {
+
+        }
+
+        .nav {
+            @include container(1085px, 257px, 240px, 4004px);
+
+            &__title {
+                @include container(153px, 30px, 309px, 4004px);
+                @include footerText(800, 20px, 160%);
+            }
+
+            &__address {
+                @include container(335px, 65px, 240px, 4101px);
+                @include footerText(500, 16px, 180%);
+                letter-spacing: 0.01em;
+            }
+
+            &__info {
+                @include container(335px, 650px, 240px, 4176px);
+                @include footerText(normal, 16px, 180%);
+                letter-spacing: 0.01em;
+            }
+
+            &__about {
+                @include container(166px, 220px, 715px, 4011px);
+                &--title {
+                    @include container(51.75px, 30px, 715px, 4011px);
+                    @include footerText(900, 16px, 160%);
+                }
+
+                &--options {
+                    @include container(166px, 160px, 715px, 4071px);
+                    @include footerText(normal, 16px, 250%);
+                }
+            }
+
+            &__help {
+                @include container(166px, 250px, 931px, 4011px);
+                &--title {
+                    @include container(51.75px, 30px, 931px, 4011px);
+                    @include footerText(900, 16px, 160%);
+
+                }
+                &--options {
+                    @include footerText();
+
+                }
+            }
+
+            &__social {
+                @include container(178px, 110px, 1147px, 4011px);
+
+                &--title {
+                    @include footerText();
+
+                }
+
+                &--fb {
+                    @include socialEllipsis(1147px);
+                    @include socialShapes(72.94%, 26.46%, 93.93%, 5.61%);
+                }
+
+                &--twitter {
+                    @include socialEllipsis(1211px);
+                    @include socialShapes(76.69%, 22.17%, 94%, 5.67%);
+                }
+
+                &--ig {
+                    @include socialEllipsis(1275px);
+                    @include socialShapes(80.75%, 18.25%, 93.98%, 5.67%);
+                }
+            }
+        }
+    }
 }
