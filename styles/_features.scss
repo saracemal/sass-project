@@ -1,6 +1,7 @@
-@import './featuresmixins';
 @import './mixins';
 @import './variables';
+@import './featuresmixins';
+
 
 //check to see if i can nest the rect div into featImg with parameters
 //ex: nest rectDiv() and then in the scss below, include rectDiv and featImg with parameters
@@ -11,7 +12,7 @@
 //use container 
 //add code for each vector within the file 
 
-features {
+.features {
     @include container(1137.28px, 1026px, 220px, 1613px);
 
     &__subheader {

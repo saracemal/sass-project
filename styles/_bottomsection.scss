@@ -1,15 +1,15 @@
-@import './mixins';
 @import './variables';
+@import './mixins';
 @import './bottommixins';
 
 .bottom {
     @include container(1600px, 613px, 0px, 3648px);
 
     &__rect {
-        @include container(1600px, 2px, 0px, 3648px);
+        @include container(1600px, 2px, 0, 3648px);
         background: $iconPurple;
         opacity: 0.2;
-    }
+    };
 
     &__title {
         @include container(584px, 101px, 240px, 3750px);
@@ -22,13 +22,13 @@
             font-size: 40px;
             line-height: 130%;
 
-            @include center;
+            // @include center;
             //@extend center;
-            // display: flex;
-            // align-items: center;
+            display: flex;
+            align-items: center;
 
             color: $aboutHeadColor
-        }
+        };
 
         &--paragraph {
             @include container(584px, 29px, 240px, 3822px);
@@ -39,8 +39,8 @@
             line-height: 160%;
 
             color: $navHeadColor;
-        }
-    }
+        };
+    };
 
     &__btns {
         @include container(410px, 60px, 947px, 3771px);

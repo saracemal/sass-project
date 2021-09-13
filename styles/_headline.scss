@@ -2,6 +2,8 @@
 @import './mixins';
 
 .headline {
+    @include container(645px, 464px, 240px, 237px);
+    background-blend-mode: normal;
 
     &__title {
         @include container(645px, 184px, 240px, 237px);
@@ -12,15 +14,16 @@
         font-size: 80px;
         line-height: 110%;
 
-        @include center;
-        // @extend center; ??
+        display: flex;
+        align-items: center;
+        // @include center;
+        // @extend center; 
 
         color: $aboutHeadColor;
     };
 
     &__info {
-        &__logo {
-          @include container(380px, 120px, 240px, 471px);
+        @include container(380px, 120px, 240px, 471px);
             font-family: $primaryFont;
             font-style: normal;
             font-weight: 500;
@@ -30,12 +33,22 @@
     };
 
     &__button {
+        @include container(170px, 60px, 240px, 641px);
         @include learnBtn(240px, 641px, $iconPurple);
-        @include learnBtnText(277px, 657px, 800);
+        // @include learnBtnText(277px, 657px, 800);
+        &--text {
+            @include container(96px, 29px, 277px, 657px);
+            @include learnBtnText(277px, 657px, 800);
+
+            // display: flex;
+            // align-items: center;
+            // text-align: center;
+
+        };
     };
 
     &__img {
         @include container(885px, 468px, 603px, 333px);
         background: url(image1.png);
     };
-}}
+};

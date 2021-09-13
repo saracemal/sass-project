@@ -88,450 +88,155 @@
 /* used for headline and info section */
 /* features section */
 /* LOGO MIXINS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
-.bottom {
+.header {
   position: absolute;
-  width: 1600px;
-  height: 613px;
-  left: 0px;
-  top: 3648px;
+  width: 1120px;
+  height: 60px;
+  left: 240px;
+  top: 47px;
 }
 
-.bottom__rect {
+.header .nav {
   position: absolute;
-  width: 1600px;
-  height: 2px;
-  left: 0px;
-  top: 3648px;
+  width: 322px;
+  height: 30px;
+  left: 410px;
+  top: 62px;
+}
+
+.header .nav__logo {
+  position: absolute;
+  width: 49px;
+  height: 35px;
+  left: 240px;
+  top: 59px;
+}
+
+.header .nav__logo--small {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 240px;
+  top: 74px;
   background: #9C69E2;
-  opacity: 0.2;
+  border-radius: 20px;
 }
 
-.bottom__title {
+.header .nav__logo--big {
   position: absolute;
-  width: 584px;
-  height: 101px;
-  left: 240px;
-  top: 3750px;
+  width: 20px;
+  height: 35px;
+  left: 269px;
+  top: 59px;
+  background: #F063B8;
+  border-radius: 20px;
 }
 
-.bottom__title--subhead {
+.header .nav__list {
+  list-style-type: none;
+}
+
+.header .nav__list--about {
   position: absolute;
-  width: 405px;
-  height: 52px;
-  left: 240px;
-  top: 3750px;
-  font-family: Helvetica, Sans-Serif;
+  width: 53px;
+  height: 30px;
+  left: 410px;
+  top: 62px;
+  font-family: "Avenir", Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
   color: #212353;
 }
 
-.bottom__title--paragraph {
+.header .nav__list--help {
   position: absolute;
-  width: 584px;
-  height: 29px;
-  left: 240px;
-  top: 3822px;
+  width: 35px;
+  height: 26px;
+  left: 503px;
+  top: 62px;
   font-family: "Avenir", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 160%;
   color: #485D68;
 }
 
-.bottom__btns {
+.header .nav__list--features {
   position: absolute;
-  width: 410px;
-  height: 60px;
-  left: 947px;
-  top: 3771px;
-}
-
-.bottom__btns--learn {
-  position: absolute;
-  width: 170px;
-  height: 60px;
-  left: 3771px;
-  top: #F063B8;
-  background: 947px;
-  border-radius: 50px;
-  position: absolute;
-  width: 96px;
-  height: 29px;
-  left: 984px;
-  top: 3787px;
+  width: 63px;
+  height: 26px;
+  left: 578px;
+  top: 62px;
   font-family: "Avenir", Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 160%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #FFFFFF;
+  color: #485D68;
 }
 
-.bottom__btns--demo {
+.header .nav__list--signup {
+  position: absolute;
+  width: 51px;
+  height: 26px;
+  left: 681px;
+  top: 62px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.header .nav__demoBtn {
   position: absolute;
   width: 210px;
   height: 60px;
-  left: 1147px;
-  top: 3771px;
+  left: 1150px;
+  top: 47px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
           box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   position: absolute;
+  width: 112px;
+  height: 26px;
+  left: 1179px;
+  top: 64px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+  position: absolute;
   width: 20px;
   height: 0px;
-  left: 1308px;
-  top: 3801px;
+  left: 1311px;
+  top: 77px;
   border: 2px solid #9C69E2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
   width: 14px;
   height: 6px;
-  left: 1328px;
-  top: 3794px;
+  left: 1331px;
+  top: 70px;
   border: 2px solid #9C69E2;
   box-sizing: border-box;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.005em;
-}
-
-.bottom footer {
-  position: absolute;
-  width: 1085px;
-  height: 260px;
-  left: 240px;
-  top: 4001px;
-}
-
-.bottom footer .nav {
-  position: absolute;
-  width: 1085px;
-  height: 257px;
-  left: 240px;
-  top: 4004px;
-}
-
-.bottom footer .nav__logo {
-  position: absolute;
-  width: 49px;
-  height: 35px;
-  left: 240px;
-  top: 4001px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 240px;
-  top: 4016px;
-  background: #9C69E2;
-  border-radius: 20px;
-  position: absolute;
-  width: 20px;
-  height: 35px;
-  left: 269px;
-  top: 4001px;
-  background: #F063B8;
-  border-radius: 20px;
-}
-
-.bottom footer .nav__title {
-  position: absolute;
-  width: 153px;
-  height: 30px;
-  left: 309px;
-  top: 4004px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 160%;
-  color: #212353;
-}
-
-.bottom footer .nav__address {
-  position: absolute;
-  width: 335px;
-  height: 65px;
-  left: 240px;
-  top: 4101px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 180%;
-  color: #212353;
-  letter-spacing: 0.01em;
-}
-
-.bottom footer .nav__info {
-  position: absolute;
-  width: 335px;
-  height: 650px;
-  left: 240px;
-  top: 4176px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 180%;
-  color: #212353;
-  letter-spacing: 0.01em;
-}
-
-.bottom footer .nav__about {
-  position: absolute;
-  width: 166px;
-  height: 220px;
-  left: 715px;
-  top: 4011px;
-}
-
-.bottom footer .nav__about--title {
-  position: absolute;
-  width: 51.75px;
-  height: 30px;
-  left: 715px;
-  top: 4011px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 160%;
-  color: #212353;
-}
-
-.bottom footer .nav__about--options {
-  position: absolute;
-  width: 166px;
-  height: 160px;
-  left: 715px;
-  top: 4071px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 250%;
-  color: #212353;
-}
-
-.bottom footer .nav__help {
-  position: absolute;
-  width: 166px;
-  height: 250px;
-  left: 931px;
-  top: 4011px;
-}
-
-.bottom footer .nav__help--title {
-  position: absolute;
-  width: 51.75px;
-  height: 30px;
-  left: 931px;
-  top: 4011px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 160%;
-  color: #212353;
-}
-
-.bottom footer .nav__help--options {
-  position: absolute;
-  width: 166px;
-  height: 190px;
-  left: 931px;
-  top: 4071px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 250%;
-  color: #212353;
-}
-
-.bottom footer .nav__social {
-  position: absolute;
-  width: 178px;
-  height: 110px;
-  left: 1147px;
-  top: 4011px;
-}
-
-.bottom footer .nav__social--title {
-  position: absolute;
-  width: 170px;
-  height: 30px;
-  left: 1147px;
-  top: 4011px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 160%;
-  color: #212353;
-}
-
-.bottom footer .nav__social--fb {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 1147px;
-  top: 4071px;
-  background: #212353;
-  opacity: 0.1;
-  position: absolute;
-  left: 72.94%;
-  right: 26.46%;
-  top: 93.93%;
-  bottom: 5.61%;
-  background: #FFFFFF;
-}
-
-.bottom footer .nav__social--twitter {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 1211px;
-  top: 4071px;
-  background: #212353;
-  opacity: 0.1;
-  position: absolute;
-  left: 76.69%;
-  right: 22.17%;
-  top: 94%;
-  bottom: 5.67%;
-  background: #FFFFFF;
-}
-
-.bottom footer .nav__social--ig {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 1275px;
-  top: 4071px;
-  background: #212353;
-  opacity: 0.1;
-  position: absolute;
-  left: 80.75%;
-  right: 18.25%;
-  top: 93.98%;
-  bottom: 5.67%;
-  background: #FFFFFF;
 }
 
 /* ------- GLOBAL VARIABLES --------- */
@@ -579,593 +284,15 @@
 /* used for headline and info section */
 /* features section */
 /* LOGO MIXINS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-features {
+.headline {
   position: absolute;
-  width: 1137.28px;
-  height: 1026px;
-  left: 220px;
-  top: 1613px;
-}
-
-features__subheader {
-  position: absolute;
-  width: 405px;
-  height: 52px;
-  left: 596.29px;
-  top: 1613px;
-  font-family: Helvetica, Sans-Serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #212353;
-  text-align: center;
-}
-
-features__paragraph {
-  position: absolute;
-  width: 584px;
-  height: 58px;
-  left: 507.29px;
-  top: 1715px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 160%;
-  color: #485D68;
-  text-align: center;
-}
-
-features__rect1 {
-  position: absolute;
-  width: 531.29px;
-  height: 388px;
-  left: 239px;
-  top: 1843px;
-}
-
-features__rect1--rect {
-  position: absolute;
-  width: 442px;
-  height: 358px;
-  left: 328.29px;
-  top: 1873px;
-  background: #68C9BA;
-  opacity: 0.1;
-  border-radius: 50px;
-}
-
-features__rect1--img {
-  position: absolute;
-  width: 232px;
-  height: 211px;
-  left: 239px;
-  top: 1946px;
-  background: url(image3);
+  width: 645px;
+  height: 464px;
+  left: 240px;
+  top: 237px;
   background-blend-mode: normal;
 }
 
-features__rect1--title {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 500.29px;
-  top: 1922px;
-  font-family: Helvetica, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #212353;
-}
-
-features__rect1--paragraph {
-  position: absolute;
-  width: 220px;
-  height: 160px;
-  left: 500.29px;
-  top: 1992px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #485D68;
-}
-
-features__rect1--vector1 {
-  position: absolute;
-  width: 33.7px;
-  height: 19.91px;
-  left: 621.4px;
-  top: 1916.88px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(20.72deg);
-          transform: rotate(20.72deg);
-  background-blend-mode: normal;
-}
-
-features__rect1--vector2 {
-  position: absolute;
-  width: 203.82px;
-  height: 118.6px;
-  left: 674.41px;
-  top: 2070.99px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-  background-blend-mode: normal;
-}
-
-features__rect1--learnbtn {
-  position: absolute;
-  width: 87px;
-  height: 26px;
-  left: 500.29px;
-  top: 2172px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 160%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.005em;
-  color: #212353;
-}
-
-features__rect2 {
-  position: absolute;
-  width: 544.28px;
-  height: 394.56px;
-  left: 813px;
-  top: 1873px;
-}
-
-features__rect2--rect {
-  position: absolute;
-  width: 442px;
-  height: 358px;
-  left: 915.28px;
-  top: 1873px;
-  background: #9C69E2;
-  opacity: 0.1;
-  border-radius: 50px;
-}
-
-features__rect2--img {
-  position: absolute;
-  width: 241px;
-  height: 185px;
-  left: 813px;
-  top: 1944px;
-  background: url(image4);
-  background-blend-mode: normal;
-}
-
-features__rect2--title {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 1087.28px;
-  top: 1922px;
-  font-family: Helvetica, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #212353;
-}
-
-features__rect2--paragraph {
-  position: absolute;
-  width: 220px;
-  height: 160px;
-  left: 500.29px;
-  top: 1992px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #485D68;
-}
-
-features__rect2--vector {
-  position: absolute;
-  width: 222.22px;
-  height: 129.3px;
-  left: 1199.72px;
-  top: 2019px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-blend-mode: normal;
-}
-
-features__rect2--learnbtn {
-  position: absolute;
-  width: 87px;
-  height: 26px;
-  left: 1087.28px;
-  top: 2172px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 160%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.005em;
-  color: #212353;
-}
-
-features__rect3 {
-  position: absolute;
-  width: 550.28px;
-  height: 358px;
-  left: 220px;
-  top: 2281px;
-}
-
-features__rect3--rect {
-  position: absolute;
-  width: 442px;
-  height: 358px;
-  left: 328.29px;
-  top: 2281px;
-  background: #F063B8;
-  opacity: 0.1;
-  border-radius: 50px;
-}
-
-features__rect3--img {
-  position: absolute;
-  width: 245px;
-  height: 181px;
-  left: 220px;
-  top: 2404px;
-  background: url(image5);
-  background-blend-mode: normal;
-}
-
-features__rect3--title {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 500.29px;
-  top: 2330px;
-  font-family: Helvetica, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #212353;
-}
-
-features__rect3--paragraph {
-  position: absolute;
-  width: 220px;
-  height: 160px;
-  left: 500.29px;
-  top: 1992px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #485D68;
-}
-
-features__rect3--vector {
-  position: absolute;
-  width: 68.05px;
-  height: 40.21px;
-  left: 747.33px;
-  top: 2337.83px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
-  background-blend-mode: normal;
-}
-
-features__rect3--learnbtn {
-  position: absolute;
-  width: 87px;
-  height: 26px;
-  left: 500.29px;
-  top: 2580px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 160%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.005em;
-  color: #212353;
-}
-
-features__rect4 {
-  position: absolute;
-  width: 539.28px;
-  height: 364px;
-  left: 818px;
-  top: 2275px;
-}
-
-features__rect4--rect {
-  position: absolute;
-  width: 442px;
-  height: 358px;
-  left: 915.28px;
-  top: 2281px;
-  background: #2D9CDB;
-  opacity: 0.1;
-  border-radius: 20px;
-}
-
-features__rect4--img {
-  position: absolute;
-  width: 230px;
-  height: 201px;
-  left: 818px;
-  top: 2367px;
-  background: url(image6);
-  background-blend-mode: normal;
-}
-
-features__rect4--title {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 1087.28px;
-  top: 2330px;
-  font-family: Helvetica, Sans-Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 130%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #212353;
-}
-
-features__rect4--paragraph {
-  position: absolute;
-  width: 220px;
-  height: 160px;
-  left: 500.29px;
-  top: 1992px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #485D68;
-}
-
-features__rect4--vector1 {
-  position: absolute;
-  width: 323.58px;
-  height: 188.28px;
-  left: 931.28px;
-  top: 2358.75px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
-  background-blend-mode: normal;
-}
-
-features__rect4--vector2 {
-  position: absolute;
-  width: 61.85px;
-  height: 36.55px;
-  left: 1275.21px;
-  top: 2559px;
-  border: 1.5px solid #FFFFFF;
-  -webkit-transform: rotate(20.72deg);
-          transform: rotate(20.72deg);
-  background-blend-mode: normal;
-}
-
-features__rect4--learnbtn {
-  position: absolute;
-  width: 87px;
-  height: 26px;
-  left: 1087.28px;
-  top: 2580px;
-  font-family: "Avenir", Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 160%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.005em;
-  color: #212353;
-}
-
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------- GLOBAL VARIABLES --------- */
-/* DOCUMENT BACKGROUND COLOR */
-/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
-/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
-/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
-/* DARKER BLUE */
-/* TEAL FOR FEATURE RECTANGLE */
-/* BLUE FOR FEATURE RECTANGLE */
-/* PRIMARY PAGE FONT */
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
-/* HEADER FONT */
-/*BORDER RADIUS FOR BUTTONS */
-/*BORDER RADIUS FOR LOGOS */
-/* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
 .headline__title {
   position: absolute;
   width: 645px;
@@ -1186,7 +313,7 @@ features__rect4--learnbtn {
   color: #212353;
 }
 
-.headline__info__logo {
+.headline__info {
   position: absolute;
   width: 380px;
   height: 120px;
@@ -1200,14 +327,27 @@ features__rect4--learnbtn {
   color: #485D68;
 }
 
-.headline__info__button {
+.headline__button {
   position: absolute;
   width: 170px;
   height: 60px;
-  left: 641px;
-  top: #9C69E2;
-  background: 240px;
+  left: 240px;
+  top: 641px;
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  left: 240px;
+  top: 641px;
+  background: #9C69E2;
   border-radius: 50px;
+}
+
+.headline__button--text {
+  position: absolute;
+  width: 96px;
+  height: 29px;
+  left: 277px;
+  top: 657px;
   position: absolute;
   width: 96px;
   height: 29px;
@@ -1228,7 +368,7 @@ features__rect4--learnbtn {
   color: #FFFFFF;
 }
 
-.headline__info__img {
+.headline__img {
   position: absolute;
   width: 885px;
   height: 468px;
@@ -1255,15 +395,6 @@ features__rect4--learnbtn {
 /*BORDER RADIUS FOR BUTTONS */
 /*BORDER RADIUS FOR LOGOS */
 /* CONTAINER BORDER RADIUS */
-/* ------ GLOBAL MIXINS ------- */
-/* CONTAINER */
-/* VECTOR MIXINs TO CREATE ARROWS */
-/* BUTTON MIXINS */
-/* TEXT MIXINS */
-/* used for info, features, testimonial, and footer section */
-/* used for headline and info section */
-/* features section */
-/* LOGO MIXINS */
 /* ------- GLOBAL VARIABLES --------- */
 /* DOCUMENT BACKGROUND COLOR */
 /* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
@@ -1282,6 +413,15 @@ features__rect4--learnbtn {
 /*BORDER RADIUS FOR BUTTONS */
 /*BORDER RADIUS FOR LOGOS */
 /* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
 .info {
   position: absolute;
   width: 1117px;
@@ -1388,75 +528,233 @@ features__rect4--learnbtn {
 /* used for headline and info section */
 /* features section */
 /* LOGO MIXINS */
-header {
-  position: absolute;
-  width: 1120px;
-  height: 60px;
-  left: 240px;
-  top: 47px;
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
 }
 
-header__logo {
-  position: absolute;
-  width: 49px;
-  height: 35px;
-  left: 240px;
-  top: 59px;
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
 }
 
-header__logo--small {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 240px;
-  top: 74px;
-  background: #9C69E2;
-  border-radius: 20px;
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
 }
 
-header__logo--big {
-  position: absolute;
-  width: 20px;
-  height: 35px;
-  left: 269px;
-  top: 59px;
-  background: #F063B8;
-  border-radius: 20px;
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
 }
 
-header .nav__list {
-  /* space evenly?? */
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
+.features {
+  position: absolute;
+  width: 1137.28px;
+  height: 1026px;
+  left: 220px;
+  top: 1613px;
 }
 
-header .nav__item--about {
+.features__subheader {
   position: absolute;
-  width: 53px;
-  height: 30px;
-  left: 410px;
-  top: 62px;
+  width: 405px;
+  height: 52px;
+  left: 596.29px;
+  top: 1613px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+  text-align: center;
+}
+
+.features__paragraph {
+  position: absolute;
+  width: 584px;
+  height: 58px;
+  left: 507.29px;
+  top: 1715px;
   font-family: "Avenir", Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 160%;
+  color: #485D68;
+  text-align: center;
+}
+
+.features__rect1 {
+  position: absolute;
+  width: 531.29px;
+  height: 388px;
+  left: 239px;
+  top: 1843px;
+}
+
+.features__rect1--rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 328.29px;
+  top: 1873px;
+  background: #68C9BA;
+  opacity: 0.1;
+  border-radius: 50px;
+}
+
+.features__rect1--img {
+  position: absolute;
+  width: 232px;
+  height: 211px;
+  left: 239px;
+  top: 1946px;
+  background: url(image3);
+  background-blend-mode: normal;
+}
+
+.features__rect1--title {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 500.29px;
+  top: 1922px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #212353;
 }
 
-header .demoBtn {
+.features__rect1--paragraph {
   position: absolute;
-  width: 210px;
-  height: 60px;
-  left: 1150px;
-  top: 47px;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  border-radius: 50px;
+  width: 220px;
+  height: 160px;
+  left: 500.29px;
+  top: 1992px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.features__rect1--vector1 {
   position: absolute;
-  width: 112px;
+  width: 33.7px;
+  height: 19.91px;
+  left: 621.4px;
+  top: 1916.88px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(20.72deg);
+          transform: rotate(20.72deg);
+  background-blend-mode: normal;
+}
+
+.features__rect1--vector2 {
+  position: absolute;
+  width: 203.82px;
+  height: 118.6px;
+  left: 674.41px;
+  top: 2070.99px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  background-blend-mode: normal;
+}
+
+.features__rect1--learnbtn {
+  position: absolute;
+  width: 87px;
   height: 26px;
-  left: 1179px;
-  top: 64px;
+  left: 500.29px;
+  top: 2172px;
   font-family: "Avenir", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1470,25 +768,326 @@ header .demoBtn {
           align-items: center;
   letter-spacing: 0.005em;
   color: #212353;
-  position: absolute;
-  width: 20px;
-  height: 0px;
-  left: 1311px;
-  top: 77px;
-  border: 2px solid #9C69E2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  width: 14px;
-  height: 6px;
-  left: 1331px;
-  top: 70px;
-  border: 2px solid #9C69E2;
-  box-sizing: border-box;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
+.features__rect2 {
+  position: absolute;
+  width: 544.28px;
+  height: 394.56px;
+  left: 813px;
+  top: 1873px;
+}
+
+.features__rect2--rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 915.28px;
+  top: 1873px;
+  background: #9C69E2;
+  opacity: 0.1;
+  border-radius: 50px;
+}
+
+.features__rect2--img {
+  position: absolute;
+  width: 241px;
+  height: 185px;
+  left: 813px;
+  top: 1944px;
+  background: url(image4);
+  background-blend-mode: normal;
+}
+
+.features__rect2--title {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 1087.28px;
+  top: 1922px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+.features__rect2--paragraph {
+  position: absolute;
+  width: 220px;
+  height: 160px;
+  left: 500.29px;
+  top: 1992px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.features__rect2--vector {
+  position: absolute;
+  width: 222.22px;
+  height: 129.3px;
+  left: 1199.72px;
+  top: 2019px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-blend-mode: normal;
+}
+
+.features__rect2--learnbtn {
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 1087.28px;
+  top: 2172px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
+.features__rect3 {
+  position: absolute;
+  width: 550.28px;
+  height: 358px;
+  left: 220px;
+  top: 2281px;
+}
+
+.features__rect3--rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 328.29px;
+  top: 2281px;
+  background: #F063B8;
+  opacity: 0.1;
+  border-radius: 50px;
+}
+
+.features__rect3--img {
+  position: absolute;
+  width: 245px;
+  height: 181px;
+  left: 220px;
+  top: 2404px;
+  background: url(image5);
+  background-blend-mode: normal;
+}
+
+.features__rect3--title {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 500.29px;
+  top: 2330px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+.features__rect3--paragraph {
+  position: absolute;
+  width: 220px;
+  height: 160px;
+  left: 500.29px;
+  top: 1992px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.features__rect3--vector {
+  position: absolute;
+  width: 68.05px;
+  height: 40.21px;
+  left: 747.33px;
+  top: 2337.83px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  background-blend-mode: normal;
+}
+
+.features__rect3--learnbtn {
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 500.29px;
+  top: 2580px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
+.features__rect4 {
+  position: absolute;
+  width: 539.28px;
+  height: 364px;
+  left: 818px;
+  top: 2275px;
+}
+
+.features__rect4--rect {
+  position: absolute;
+  width: 442px;
+  height: 358px;
+  left: 915.28px;
+  top: 2281px;
+  background: #2D9CDB;
+  opacity: 0.1;
+  border-radius: 20px;
+}
+
+.features__rect4--img {
+  position: absolute;
+  width: 230px;
+  height: 201px;
+  left: 818px;
+  top: 2367px;
+  background: url(image6);
+  background-blend-mode: normal;
+}
+
+.features__rect4--title {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 1087.28px;
+  top: 2330px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+.features__rect4--paragraph {
+  position: absolute;
+  width: 220px;
+  height: 160px;
+  left: 500.29px;
+  top: 1992px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.features__rect4--vector1 {
+  position: absolute;
+  width: 323.58px;
+  height: 188.28px;
+  left: 931.28px;
+  top: 2358.75px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  background-blend-mode: normal;
+}
+
+.features__rect4--vector2 {
+  position: absolute;
+  width: 61.85px;
+  height: 36.55px;
+  left: 1275.21px;
+  top: 2559px;
+  border: 1.5px solid #FFFFFF;
+  -webkit-transform: rotate(20.72deg);
+          transform: rotate(20.72deg);
+  background-blend-mode: normal;
+}
+
+.features__rect4--learnbtn {
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 1087.28px;
+  top: 2580px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
 /* ------- GLOBAL VARIABLES --------- */
 /* DOCUMENT BACKGROUND COLOR */
 /* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
@@ -1841,8 +1440,480 @@ header .demoBtn {
 /*BORDER RADIUS FOR BUTTONS */
 /*BORDER RADIUS FOR LOGOS */
 /* CONTAINER BORDER RADIUS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------- GLOBAL VARIABLES --------- */
+/* DOCUMENT BACKGROUND COLOR */
+/* PURPLE FOR BUTTONS AND RECTANGLE ON HEADER */
+/* PINK FOR BUTTONS AND RECTANGLE ON HEADER */
+/* FONT COLOR FOR NAV LINKS AND HEADLINE INFO*/
+/* DARKER BLUE */
+/* TEAL FOR FEATURE RECTANGLE */
+/* BLUE FOR FEATURE RECTANGLE */
+/* PRIMARY PAGE FONT */
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir.woff") format("woff"), url("../fonts/Avenir.ttf") format("truetype"), url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+/* HEADER FONT */
+/*BORDER RADIUS FOR BUTTONS */
+/*BORDER RADIUS FOR LOGOS */
+/* CONTAINER BORDER RADIUS */
+/* ------ GLOBAL MIXINS ------- */
+/* CONTAINER */
+/* VECTOR MIXINs TO CREATE ARROWS */
+/* BUTTON MIXINS */
+/* TEXT MIXINS */
+/* used for info, features, testimonial, and footer section */
+/* used for headline and info section */
+/* features section */
+/* LOGO MIXINS */
+.bottom {
+  position: absolute;
+  width: 1600px;
+  height: 613px;
+  left: 0px;
+  top: 3648px;
+}
+
+.bottom__rect {
+  position: absolute;
+  width: 1600px;
+  height: 2px;
+  left: 0;
+  top: 3648px;
+  background: #9C69E2;
+  opacity: 0.2;
+}
+
+.bottom__title {
+  position: absolute;
+  width: 584px;
+  height: 101px;
+  left: 240px;
+  top: 3750px;
+}
+
+.bottom__title--subhead {
+  position: absolute;
+  width: 405px;
+  height: 52px;
+  left: 240px;
+  top: 3750px;
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212353;
+}
+
+.bottom__title--paragraph {
+  position: absolute;
+  width: 584px;
+  height: 29px;
+  left: 240px;
+  top: 3822px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #485D68;
+}
+
+.bottom__btns {
+  position: absolute;
+  width: 410px;
+  height: 60px;
+  left: 947px;
+  top: 3771px;
+}
+
+.bottom__btns--learn {
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  left: 947px;
+  top: 3771px;
+  background: #F063B8;
+  border-radius: 50px;
+  position: absolute;
+  width: 96px;
+  height: 29px;
+  left: 984px;
+  top: 3787px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bottom__btns--demo {
+  position: absolute;
+  width: 210px;
+  height: 60px;
+  left: 1147px;
+  top: 3771px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1308px;
+  top: 3801px;
+  border: 2px solid #9C69E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  left: 1328px;
+  top: 3794px;
+  border: 2px solid #9C69E2;
+  box-sizing: border-box;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+}
+
+.bottom footer {
+  position: absolute;
+  width: 1085px;
+  height: 260px;
+  left: 240px;
+  top: 4001px;
+}
+
+.bottom footer .nav {
+  position: absolute;
+  width: 1085px;
+  height: 257px;
+  left: 240px;
+  top: 4004px;
+}
+
+.bottom footer .nav__logo {
+  position: absolute;
+  width: 49px;
+  height: 35px;
+  left: 240px;
+  top: 4001px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 240px;
+  top: 4016px;
+  background: #9C69E2;
+  border-radius: 20px;
+  position: absolute;
+  width: 20px;
+  height: 35px;
+  left: 269px;
+  top: 4001px;
+  background: #F063B8;
+  border-radius: 20px;
+}
+
+.bottom footer .nav__title {
+  position: absolute;
+  width: 153px;
+  height: 30px;
+  left: 309px;
+  top: 4004px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212353;
+}
+
+.bottom footer .nav__address {
+  position: absolute;
+  width: 335px;
+  height: 65px;
+  left: 240px;
+  top: 4101px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: #212353;
+  letter-spacing: 0.01em;
+}
+
+.bottom footer .nav__info {
+  position: absolute;
+  width: 335px;
+  height: 650px;
+  left: 240px;
+  top: 4176px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #212353;
+  letter-spacing: 0.01em;
+}
+
+.bottom footer .nav__about {
+  position: absolute;
+  width: 166px;
+  height: 220px;
+  left: 715px;
+  top: 4011px;
+}
+
+.bottom footer .nav__about--title {
+  position: absolute;
+  width: 51.75px;
+  height: 30px;
+  left: 715px;
+  top: 4011px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+}
+
+.bottom footer .nav__about--options {
+  position: absolute;
+  width: 166px;
+  height: 160px;
+  left: 715px;
+  top: 4071px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 250%;
+  color: #212353;
+}
+
+.bottom footer .nav__help {
+  position: absolute;
+  width: 166px;
+  height: 250px;
+  left: 931px;
+  top: 4011px;
+}
+
+.bottom footer .nav__help--title {
+  position: absolute;
+  width: 51.75px;
+  height: 30px;
+  left: 931px;
+  top: 4011px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+}
+
+.bottom footer .nav__help--options {
+  position: absolute;
+  width: 166px;
+  height: 190px;
+  left: 931px;
+  top: 4071px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 250%;
+  color: #212353;
+}
+
+.bottom footer .nav__social {
+  position: absolute;
+  width: 178px;
+  height: 110px;
+  left: 1147px;
+  top: 4011px;
+}
+
+.bottom footer .nav__social--title {
+  position: absolute;
+  width: 170px;
+  height: 30px;
+  left: 1147px;
+  top: 4011px;
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+}
+
+.bottom footer .nav__social--fb {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1147px;
+  top: 4071px;
+  background: #212353;
+  opacity: 0.1;
+  position: absolute;
+  left: 72.94%;
+  right: 26.46%;
+  top: 93.93%;
+  bottom: 5.61%;
+  background: #FFFFFF;
+}
+
+.bottom footer .nav__social--twitter {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1211px;
+  top: 4071px;
+  background: #212353;
+  opacity: 0.1;
+  position: absolute;
+  left: 76.69%;
+  right: 22.17%;
+  top: 94%;
+  bottom: 5.67%;
+  background: #FFFFFF;
+}
+
+.bottom footer .nav__social--ig {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1275px;
+  top: 4071px;
+  background: #212353;
+  opacity: 0.1;
+  position: absolute;
+  left: 80.75%;
+  right: 18.25%;
+  top: 93.98%;
+  bottom: 5.67%;
+  background: #FFFFFF;
+}
+
 body {
   background: #E5E5E5;
-  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */

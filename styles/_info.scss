@@ -1,26 +1,18 @@
-@import './mixins';
 @import './variables';
-
-@mixin infoPlacement($width, $height, $left, $top) {
-    position: absolute;
-    width: $width;
-    height: $height;
-    left: $left;
-    top: $top;
-}
+@import './mixins';
 
 .info {
-    @include infoPlacement(1117px, 560px, 240px, 903.18px);
+    @include container(1117px, 560px, 240px, 903.18px);
     background: rgba(240, 99, 184, 0.15);
-    border-radius: 50px;
+    border-radius: $rectBorderRadius;
 
     &__img {
-        @include infoPlacement(477px, 504px, 251px, 935px);
+        @include container(477px, 504px, 251px, 935px);
         background: url(image2.png);
     };
 
     &__text {
-        @include infoPlacement(475px, 310px, 790px, 1028.18px);
+        @include container(475px, 310px, 790px, 1028.18px);
 
         &--subhead {
             @include subHeadline(475px, 100px, 790px, 1028.18px);

@@ -1,14 +1,14 @@
 @import "./variables";
 @import './mixins';
-@import './bottommixins';
-@import './bottomsection';
-@import './features';
-@import './featuresmixins';
+@import './nav';
 @import './headline';
 @import './info';
-@import './nav';
-@import './testimonials';
+@import './featuresmixins';
+@import './features';
 @import './testimonialsmixins';
+@import './testimonials';
+@import './bottommixins';
+@import './bottomsection';
 
 
 
@@ -18,5 +18,4 @@
 
 body {
     background: $body-bg;
-    position: absolute;
 };

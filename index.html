@@ -8,33 +8,42 @@
     <title>HTML/CSS Mini Project</title>
 </head>
 <body>
-   <header>
+   <!-- <header class="header">
        <div class="header__logo">
             <div class="header__logo--small"></div>
             <div class="header__logo--big"></div>
 
-       </div>
+       </div> -->
+    <header class="header">
        <nav class="nav">
+           <div class="nav__logo">
+               <element class="nav__logo--small"></element>
+               <element class="nav__logo--big"></element>
+           </div>
            <ul class="nav__list">
             <li class="nav__item--about">About</li>
-            <li class="nav__item">Help</li>
-            <li class="nav__item">Features</li>
-            <li class="nav__item">Signup</li>
+            <li class="nav__item--help">Help</li>
+            <li class="nav__item--features">Features</li>
+            <li class="nav__item--signup">Signup</li>
            </ul>
+           <button class="nav__demobtn">
+            <p class="nav__demobtn--text">Request Demo</p>
+        </button>
        </nav>
-       <button class="demobtn">
+    </header>
+       <!-- <button class="demobtn">
            <p class="demobtn__text">Request Demo</p>
-           
-
-       </button>
-   </header>
+       </button> -->
+   <!-- </header> -->
 
    <div class="headline">
        <h1 class="headline__title">Save your data storage here.</h1>
        <p class="headline__info">Data Warehouse is a data storage area that has been
         tested for security, so you can store your data here
         safely but not be afraid of being stolen by others.</p>
-       <button class="headline__button">Learn more</button>
+       <button class="headline__button">
+           <p class="headline__button--text">Learn more</p>
+       </button>
        <img class="headline__img" src="image1.png" alt="headline image"/>
    </div>
 
